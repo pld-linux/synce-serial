@@ -1,12 +1,12 @@
 Summary:	Helper scripts for setting up a serial connection for use with SynCE
 Summary(pl):	Skrypty pomocnicze do nawi±zywania po³±czenia szeregowego dla SynCE
 Name:		synce-serial
-Version:	0.9.0
+Version:	0.9.1
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0: 	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
-# Source0-md5:	3042891c850fa685e40b1216debc34f9
+# Source0-md5:	77f8879486469118386fb7429ec5a794
 URL:		http://synce.sourceforge.net/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1.4
@@ -27,7 +27,7 @@ szeregowego dla SynCE. S± one zasadniczo obudowaniem pppd.
 
 %build
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
