@@ -7,7 +7,7 @@ License:	MIT
 Group:		Libraries
 Source0: 	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	77f8879486469118386fb7429ec5a794
-URL:		http://synce.sourceforge.net/
+URL:		http://www.synce.org/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1.4
 BuildRequires:	libtool
