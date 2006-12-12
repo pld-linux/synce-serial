@@ -1,0 +1,10 @@
+# Modifications to this file will be lost next time you run synce-serial-config
+/dev/qtek 115200
+connect '/usr/bin/synce-serial-chat'
+nodefaultroute
+noauth
+local
+192.168.1.2:192.168.1.66
+ms-dns 194.106.96.5
+crtscts
+linkname synce-device
