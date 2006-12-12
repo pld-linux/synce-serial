@@ -2,11 +2,12 @@ Summary:	Helper scripts for setting up a serial connection for use with SynCE
 Summary(pl):	Skrypty pomocnicze do nawi±zywania po³±czenia szeregowego dla SynCE
 Name:		synce-serial
 Version:	0.9.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
-Source0: 	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	77f8879486469118386fb7429ec5a794
+Source1:	synce-device
 URL:		http://www.synce.org/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1.4
@@ -41,6 +42,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT/etc/ppp/peers
+install %{SOURCE1} $RPM_BUILD_ROOT/etc/ppp/peers/synce-device
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -48,5 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE README TODO
 %attr(755,root,root) %{_bindir}/*
+%config(noreplace) %verify(not md5 mtime size) /etc/ppp/peers/synce-device
 %{_datadir}/synce
 %{_mandir}/man8/*.8*
