@@ -1,0 +1,11 @@
+--- synce-serial-0.9.1/script/synce-serial-start.in~	2005-07-08 22:04:42.000000000 +0300
++++ synce-serial-0.9.1/script/synce-serial-start.in	2006-12-12 02:31:03.636661413 +0200
+@@ -96,7 +96,7 @@
+ #
+ 
+ MD5=/usr/bin/md5sum
+-IPTABLES=/sbin/iptables
++IPTABLES=/usr/sbin/iptables
+ EMPTY_IPTABLES_MD5SUM="f2384cfbed4d4fb64061368c4128d7ea"
+ 
+ # Do we have md5 or md5sum?
