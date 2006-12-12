@@ -2,7 +2,7 @@ Summary:	Helper scripts for setting up a serial connection for use with SynCE
 Summary(pl):	Skrypty pomocnicze do nawi±zywania po³±czenia szeregowego dla SynCE
 Name:		synce-serial
 Version:	0.9.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
