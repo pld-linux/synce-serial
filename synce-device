@@ -1,6 +1,6 @@
 # Modifications to this file will be lost next time you run synce-serial-config
 /dev/qtek 115200
-connect '/usr/bin/synce-serial-chat'
+connect '/usr/sbin/synce-serial-chat'
 nodefaultroute
 noauth
 local
