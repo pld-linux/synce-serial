@@ -32,7 +32,8 @@ szeregowego dla SynCE. S± one zasadniczo obudowaniem pppd.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--bindir=%{_sbindir}
 
 %{__make}
 
@@ -51,7 +52,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE README TODO
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_sbindir}/synce-serial-abort
+%attr(755,root,root) %{_sbindir}/synce-serial-chat
+%attr(755,root,root) %{_sbindir}/synce-serial-config
+%attr(755,root,root) %{_sbindir}/synce-serial-start
 %config(noreplace) %verify(not md5 mtime size) /etc/ppp/peers/synce-device
 %{_datadir}/synce
 %{_mandir}/man8/*.8*
