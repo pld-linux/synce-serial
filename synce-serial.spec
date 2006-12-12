@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	77f8879486469118386fb7429ec5a794
 Source1:	synce-device
+Patch0:		%{name}-iptables.patch
 URL:		http://www.synce.org/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1.4
@@ -25,6 +26,7 @@ szeregowego dla SynCE. S± one zasadniczo obudowaniem pppd.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
