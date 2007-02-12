@@ -1,5 +1,5 @@
 Summary:	Helper scripts for setting up a serial connection for use with SynCE
-Summary(pl.UTF-8):   Skrypty pomocnicze do nawiązywania połączenia szeregowego dla SynCE
+Summary(pl.UTF-8):	Skrypty pomocnicze do nawiązywania połączenia szeregowego dla SynCE
 Name:		synce-serial
 Version:	0.9.1
 Release:	3
