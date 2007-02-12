@@ -1,5 +1,5 @@
 Summary:	Helper scripts for setting up a serial connection for use with SynCE
-Summary(pl):	Skrypty pomocnicze do nawi±zywania po³±czenia szeregowego dla SynCE
+Summary(pl.UTF-8):   Skrypty pomocnicze do nawiÄ…zywania poÅ‚Ä…czenia szeregowego dla SynCE
 Name:		synce-serial
 Version:	0.9.1
 Release:	3
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module contains helper scripts for setting up a serial connection
 for use with SynCE. They are basically wrappers around pppd.
 
-%description -l pl
-Ten modu³ zawiera skrypty pomocnicze do nawi±zywania po³±czenia
-szeregowego dla SynCE. S± one zasadniczo obudowaniem pppd.
+%description -l pl.UTF-8
+Ten moduÅ‚ zawiera skrypty pomocnicze do nawiÄ…zywania poÅ‚Ä…czenia
+szeregowego dla SynCE. SÄ… one zasadniczo obudowaniem pppd.
 
 %prep
 %setup -q
