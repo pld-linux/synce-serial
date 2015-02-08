@@ -1,3 +1,4 @@
+# NOTE: since 0.16 it's integrated into synce-core.spec
 Summary:	Helper scripts for setting up a serial connection for use with SynCE
 Summary(pl.UTF-8):	Skrypty pomocnicze do nawiązywania połączenia szeregowego dla SynCE
 Name:		synce-serial
@@ -5,7 +6,7 @@ Version:	0.11
 Release:	1
 License:	MIT
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/synce/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/synce/%{name}-%{version}.tar.gz
 # Source0-md5:	a83f20eb59c845de192645158d051062
 Source1:	synce-device
 Patch0:		%{name}-iptables.patch
